@@ -2,6 +2,11 @@
 <html>
     <head>
         <title>Jorrit Overboom</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./Resources/CSS/style.css">
+        <link rel="stylesheet" href="./Resources/CSS/skills.css">
     </head>
     
     <body>
@@ -9,8 +14,8 @@
             <span>Jorrit Overboom</span>
             <nav>
                 <ul>
-                    <li><a href="./index.html">About Me</a></li>
-                    <li><a href="#">Skills</a></li>
+                    <li><a href="./index.html">About me</a></li>
+                    <li class="this-page"><a href="#">Skills</a></li>
                     <li><a href="./resume.html">Resume</a></li>
                     <li><a href="./contact.html">Contact</a></li>
                 </ul>
@@ -27,10 +32,56 @@
 
             <div id="flexbox">
                 <h2>CSS Flexbox</h2>
+                <p>Below are some random pictures from my time in Australia, displayed with the use of CSS Flexbox.</p>
+                <div class="flex-container">
+                    <div class="flex-item">
+                        <div class="flex-image"><img src="./Resources/Images/gibb_river_start.JPG"></div>
+                        <div class="flex-description"><p>Gibb River road, start of the track eastern part</p></div>
+                    </div>
+                    <div class="flex-item">
+                        <div class="flex-image"><img src="./Resources/Images/gibb_river_burnt_car.JPG"></div>
+                        <div class="flex-description"><p>Gibb River road, burnt car</p></div>
+                    </div>
+                    <div class="flex-item">
+                        <div class="flex-image"><img src="./Resources/Images/abandoned_house_nullabor.JPG"></div>
+                        <div class="flex-description"><p>Nullabor, an abandoned house</p></div>
+                    </div>
+                    <div class="flex-item">
+                        <div class="flex-image"><img src="./Resources/Images/sunset_nullabor.JPG"></div>
+                        <div class="flex-description"><p>Nullabor, sunset</p></div>
+                    </div>
+                    <div class="flex-item">
+                        <div class="flex-image"><img src="./Resources/Images/litchfield_national_park.JPG"></div>
+                        <div class="flex-description"><p>Litchfield national park, a waterfall</p></div>
+                    </div>
+                </div>
             </div>
 
             <div id="grid">
                 <h2>CSS Grid</h2>
+                <p>Below are some random pictures from my time in Asia, displayed with the use of CSS Grid</p>
+                <div class="grid-container">
+                    <div class="grid-item" id="grid-item1">
+                        <div class="grid-image"><img src="./Resources/Images/ninh_binh_river_mountain_view.jpg"></div>
+                        <div class="grid-description"><p>Ninh Binh, Vietnam, view of the mountains and river</p></div>
+                    </div>
+                    <div class="grid-item" id="grid-item2">
+                        <div class="grid-image"><img src="./Resources/Images/myanmar_sunset_boat.JPG"></div>
+                        <div class="grid-description"><p>Bagan, Myanmar, view of the river with a fisherman</p></div>
+                    </div>
+                    <div class="grid-item" id="grid-item3">
+                        <div class="grid-image"><img src="./Resources/Images/highest_waterfall_laos.jpg"></div>
+                        <div class="grid-description"><p>Tad Fane waterfall, Laos, tallest waterfall in Laos</p></div>
+                    </div>
+                    <div class="grid-item" id="grid-item4">
+                        <div class="grid-image"><img src="./Resources/Images/random_shrine_japan.JPG"></div>
+                        <div class="grid-description"><p>Shrine, Japan</p></div>
+                    </div>
+                    <div class="grid-item" id="grid-item5">
+                        <div class="grid-image"><img src="./Resources/Images/cherry_blossoms_japan.JPG"></div>
+                        <div class="grid-description"><p>Cherry blossom trees, Japan</p></div>
+                    </div>
+                </div>
             </div>
 
             <div id="dice">

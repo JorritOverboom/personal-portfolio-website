@@ -1,0 +1,56 @@
+/* general */
+html {
+    font-family: "Proza Libre";
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* header */
+header {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    border-bottom: 1px solid gray;
+}
+
+header span {
+    display: inline-block;
+    font-size: 2rem;
+}
+
+header nav {
+    display: inline-block;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav li a {
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.this-page {
+    font-size: 1.5rem;
+}
+
+/* footer */
+footer {
+    margin-top: auto;
+    text-align: center;
+}
+
+footer p {
+    font-size: 0.75rem;
+}
