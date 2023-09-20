@@ -31,7 +31,6 @@
     text-align: center;
 }
 
-
 .grid-image img {
     width: 100%;
     height: auto;
@@ -61,4 +60,78 @@
 
 #grid-item5 {
     grid-area: 3 / 3 / span 1 / span 1;
+}
+
+
+/* dice */
+#dice-game {
+    display: grid;
+    grid-template-rows: 2;
+    grid-template-columns: 1;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+.side {
+    border: 1px solid gray;
+    border-radius: 30px;
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto auto auto;
+}
+
+#question {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 7rem;
+}
+
+#dice-game .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#dice-game .dot {
+    background-color: black;
+    border-radius: 100%;
+    width: 50%;
+    height: 50%;
+}
+
+#side1, #side2, #side3, #side4, #side5, #side6 {
+    display: none;
+}
+
+#dice-container {
+    width: 200px;
+    height: 200px;
+}
+
+#dice-button {
+    width: 200px;
+    height: 100px;
+    color: white;
+    background-color: green;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 2rem;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px black;
+}
+
+#dice-button:hover {
+    cursor: pointer;
+}
+
+#dice-button:active {
+    box-shadow: none;
+    margin-top: 5px;
+    margin-left: 5px;
 }
