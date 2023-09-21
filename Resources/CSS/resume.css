@@ -129,9 +129,17 @@ li {
 .lists {
     grid-area: 1 / 2 / span 1 / span 1;
     display: grid;
-    grid-template-rows: 230px 140px auto;
-    grid-template-columns: 1;
+    grid-template-rows: max-content max-content max-content;
     margin-left: 20px;
+}
+
+.lists ul {
+    padding-left: 0;
+}
+
+.lists li {
+    margin: 10px 0 0 10px;
+    list-style-type:circle;
 }
 
 .traits {
@@ -144,7 +152,4 @@ li {
 
 .hobbys {
     grid-area: 3 / 1 / span 1 / span 1;
-}
-
-.traits, .languages, .hobbys {
 }

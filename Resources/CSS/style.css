@@ -15,6 +15,10 @@ body {
     flex-direction: column;
 }
 
+main {
+    margin-top: 50px;
+}
+
 /* header */
 header {
     justify-content: space-between;
@@ -39,6 +43,22 @@ nav li {
 nav li a {
     text-decoration: none;
     margin-left: 10px;
+}
+
+nav li a:link {
+    color: black;
+}
+
+nav li a:visited {
+    color: black;
+}
+
+nav li a:hover {
+    color: black;
+}
+
+nav li a:active {
+    color: black;
 }
 
 .this-page {
