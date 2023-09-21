@@ -2,6 +2,11 @@
 <html>
     <head>
         <title>Jorrit Overboom</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./Resources/CSS/style.css">
+        <link rel="stylesheet" href="./Resources/CSS/contact.css">
     </head>
     
     <body>
@@ -9,17 +14,69 @@
             <span>Jorrit Overboom</span>
             <nav>
                 <ul>
-                    <li><a href="./index.html">About Me</a></li>
+                    <li><a href="./index.html">About me</a></li>
                     <li><a href="./skills.html">Skills</a></li>
                     <li><a href="./resume.html">Resume</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li class="this-page"><a href="#">Contact</a></li>
                 </ul>
             </nav>
         </header>
 
         <main>
             <h1>Contact</h1>
-            
+                <p>If you would like to get in touch with me, please fill out the form.</p>
+                <p>Note! This form will not get posted as there is no back-end to this website yet.</p>
+            <form>
+                <br>
+                <div class="name">
+                    <label for="name">Name</label>
+                    <br>
+                    <input type="text" name="name" id="name" required>
+                </div>
+                <br>
+                <div class="phone">
+                    <label for="phone">Phone number</label>
+                    <br>
+                    <input type="text" name="phone" id="phone" value="+31 6 12 34 56 78">
+                </div>
+                <br>
+                <div class="email">
+                    <label for="email">Email address</label>
+                    <br>
+                    <input type="text" name="email" id="email" required value="example@gmail.com">
+                </div>
+                <br>
+                <div class="rate">
+                    <label for="rate">How would you rate this website?</label>
+                    <br>
+                    <span>0</span>
+                    <input type="range" name="rate" id="rate" required min="90" max="100" step="1" value="100">
+                    <span>100</span>
+                </div>
+                <br>
+                <div class="reason">
+                    <span>For which reason are you contacting me?</span>
+                    <br>
+                    <input type="radio" name="reason" id="job" required>
+                    <label for="radio">Job offer</label>
+                    <input type="radio" name="reason" id="intern">
+                    <label for="radio">Internship</label>
+                    <input type="radio" name="reason" id="trainee">
+                    <label for="radio">Traineeship</label>
+                    <input type="radio" name="reason" id="question">
+                    <label for="radio">Question</label>
+                </div>
+                <br>
+                <div class="description">
+                    <label for="description">Please describe what you are asking/offering</label>
+                    <br>
+                    <textarea name="description" id="description" rows="20" cols="80" required></textarea>
+                </div>
+                <br>
+                <div class="send">
+                    <input type="submit" id="send" value="Send">
+                </div>
+            </form>
         </main>
 
         <footer>
